@@ -14,4 +14,12 @@ app.config(function($routeProvider) {
         templateUrl : "partials/page2.htm",
         controller : 'main as crtl'
     })
+	.when("/drop1", {
+        templateUrl : "partials/drop1.htm",
+        controller : 'main as crtl'
+    })
+	.when("/drop2", {
+        templateUrl : "partials/drop2.htm",
+        controller : 'main as crtl'
+    })
 })

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Blue Marble</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Blue Marble">
+	<meta name="author" content="Elisha Parslow and Kathleen Levi">
+
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body ng-app="webApp">
+	<!--Header-->
+	<div ng-include='"templates/header.html"'></div>
+	
+	<!--Page content goes here-->
+	<div ng-view></div>
+
+	<!--Footer-->
+	<div ng-include='"templates/footer.html"'></div>
+		
+</body>
+    <!--Angular, jQuery, Bootstrap -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.js"></script>	
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.js"></script>	
+	
+	<!-- custom javascripts -->
+	<script src="js/main.js"></script>
+</html>

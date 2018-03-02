@@ -22,4 +22,40 @@ app.config(function($routeProvider) {
         templateUrl : "partials/drop2.htm",
         controller : 'main as crtl'
     })
-})
+});
+
+app.controller('main', function($scope, $http) {
+	var vm = this,
+		img = ["default1.jpg", "default2.jpg", "default3.jpg", "default4.jpg", "default1.jpg", "default2.jpg", "default3.jpg", "default4.jpg", "default1.jpg", "default2.jpg", "default3.jpg", "default4.jpg"];
+
+	$(document).ready(function() { 
+		//finds images and gives a path based on page
+		vm.images = convertImagePath(img);
+
+		//Update the page
+		$scope.$apply();
+	});
+
+
+	//converts a ton of images to the correct path
+	function convertImagePath(img){
+		var imgPath = []
+		angular.forEach(img, function(item, idx){
+			imgPath.push({"name":item, "path":getImagePath(item)});
+		})
+		console.log(imgPath);
+		return imgPath;
+	};
+
+	//get image path
+	function getImagePath(imageName){
+		return "img/" + imageName;	
+	};
+	
+	vm.openModal = function(image) {
+		vm.title = image.name;
+		vm.modalImg = image.path;
+	};
+});
+
+	

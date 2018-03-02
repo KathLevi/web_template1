@@ -60,6 +60,46 @@ body{
 .dropdwn:hover .dropdown-content {
     display: block;
 }
+/* 
+ * PORTFOLIO
+ */
+.gallery {
+	-webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+	column-count: 4;
+	margin: 15px;
+}
+.galleryImg {
+	width: 100%;
+	margin: 5px;
+}
+.modal {
+	position: absolute;
+	width: 100%;
+}
+.modal-title {
+	font-size: 40px;
+}
+.modal-dialog{
+	width: 200%;	
+}
+.modal-content {
+	width:150%;
+	text-align: center;	
+	left: 50%;
+	transform: translateX(-50%);
+}
+.modalImg {
+	width: 60%;
+	margin: 40px 0px 40px 150px;
+	border: solid black 4px;			
+}
+.close {
+	position: absolute;
+	top: 30px;
+	right: 40px;
+	font-size: 40px;
+}
 /*
  * FOOTER
  */

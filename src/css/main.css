@@ -2,6 +2,7 @@
 /* CSS Document */
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -9,6 +10,8 @@ html {
 body{
 	margin: 0;
 	padding: 0;
+	position: relative;
+	min-height: 100%;
 }
 /*
  * HEADER
@@ -56,4 +59,16 @@ body{
 }
 .dropdwn:hover .dropdown-content {
     display: block;
+}
+/*
+ * FOOTER
+ */
+footer {
+	padding: 40px;
+	background-color: black;
+	color: white;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
 }

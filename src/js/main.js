@@ -12,15 +12,15 @@ app.config(function($routeProvider) {
     })
     .when("/page2", {
         templateUrl : "partials/page2.htm",
-        controller : 'main as crtl'
+        controller : 'main as ctrl'
     })
 	.when("/drop1", {
         templateUrl : "partials/drop1.htm",
-        controller : 'main as crtl'
+        controller : 'main as ctrl'
     })
 	.when("/drop2", {
         templateUrl : "partials/drop2.htm",
-        controller : 'main as crtl'
+        controller : 'main as ctrl'
     })
 });
 
@@ -43,7 +43,6 @@ app.controller('main', function($scope, $http) {
 		angular.forEach(img, function(item, idx){
 			imgPath.push({"name":item, "path":getImagePath(item)});
 		})
-		console.log(imgPath);
 		return imgPath;
 	};
 

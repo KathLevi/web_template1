@@ -12,7 +12,7 @@ app.config(function($routeProvider) {
     })
     .when("/page2", {
         templateUrl : "partials/page2.htm",
-        controller : 'main as ctrl'
+        controller : 'page2 as ctrl'
     })
 	.when("/drop1", {
         templateUrl : "partials/drop1.htm",
@@ -20,7 +20,7 @@ app.config(function($routeProvider) {
     })
 	.when("/drop2", {
         templateUrl : "partials/drop2.htm",
-        controller : 'drop2 as ctrl'
+        controller : 'main as ctrl'
     })
 });
 
@@ -28,13 +28,8 @@ app.controller('drop1', function($scope, $http) {
 	var vm = this,
 		img = ["default1.jpg", "default2.jpg", "default3.jpg", "default4.jpg", "default1.jpg", "default2.jpg", "default3.jpg", "default4.jpg", "default1.jpg", "default2.jpg", "default3.jpg", "default4.jpg"];
 
-	$(document).ready(function() { 
-		//finds images and gives a path based on page
-		vm.images = convertImagePath(img);
-		
-		//Update the page
-		$scope.$apply();
-	});
+	//finds images and gives a path based on page
+	vm.images = convertImagePath(img);
 	
 	vm.openModal = function(image) {
 		vm.title = image.name;
@@ -42,22 +37,12 @@ app.controller('drop1', function($scope, $http) {
 	};
 });
 
-app.controller('drop2', function($scope, $http) {
+app.controller('page2', function($scope, $http) {
 	var vm = this,
-		img = ["default1.jpg", "default2.jpg", "default3.jpg", "default4.jpg"];
+		img = ["default1.jpg", "default1.jpg", "default1.jpg", "default1.jpg"];
 
-	$(document).ready(function() { 
-		//finds images and gives a path based on page
-		vm.images = convertImagePath(img);
-		
-		//Update the page
-		$scope.$apply();
-	});
-	
-	vm.openModal = function(image) {
-		vm.title = image.name;
-		vm.modalImg = image.path;
-	};
+	//finds images and gives a path based on page
+	vm.images = convertImagePath(img);
 });
 
 //converts a ton of images to the correct path

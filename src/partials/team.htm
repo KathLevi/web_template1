@@ -1,0 +1,15 @@
+<div class="section-content">
+    <h1 class="section-header">Meet our <span class="content-header"> Team</span></h1>
+    <h3>Click an image to learn more about one of our team members</h3>
+</div>
+<div align="center">
+    <div class="teamCard">
+        <div class="teamImg"  ng-repeat="x in ctrl.team"> 
+            <img ng-click="ctrl.dropModal(x)" src="{{x.path}}" alt="{{x.name}}" />
+        </div>      
+    </div> 
+    <div class="teamInfo" id="info">
+        <div class="teamName" data-dismiss="teamInfo">{{ctrl.teamName}}</div>
+        <div class="teamDesc">{{ctrl.teamDesc}}</div>
+    </div>
+</div>

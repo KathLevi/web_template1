@@ -116,6 +116,130 @@ body{
 }
 
 /*
+ * TEAM
+ */
+.teamCard {
+	width: 100%;
+	display: inline-block;
+	margin: 10px 40px;
+	margin-left: -15px;
+}
+.teamImg img:hover {
+	height: 120%;
+}
+.teamImg {
+	display: inline-block;
+	width: 225px;
+	height: 225px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0px 50px;
+	cursor: pointer;
+}
+.teamImg img {
+	width: auto;
+	height: 100%;
+}
+.teamInfo {
+	font-size: 20px;
+	width: 60%;
+	text-align: left;
+	margin-bottom: 30px;
+	margin-left: 20px;
+}
+.teamName {
+	font-size: 30px;
+	font-weight: bold;
+	display: inline-block;
+	padding-bottom: 20px;
+}
+
+/*
+ * CONTACT
+ */
+#contact{
+	padding-top: 60px;
+	width: 100%;
+	width: 100vw;
+	height: 550px;  
+}
+.content-header{
+	color:#0880f7;
+	font-size: 45px;
+}
+.section-content{
+	text-align: center; 
+}
+.contact-section{
+	padding-top: 40px;
+}
+.contact-section .col-md-6{
+	width: 50%;
+}
+.form-line{
+	border-right: 1px solid #B29999;
+}
+.form-group{
+	margin-top: 10px;
+}
+label{
+	font-size: 1.3em;
+	line-height: 1em;
+	font-weight: normal;
+}
+.form-control{
+	font-size: 1.3em;
+	color: #080808;
+}
+.submit {
+	float: right;
+	width: 150px;
+}
+
+/* 
+ * SIGN IN
+ */
+.signInBox{
+	margin-top: 80px;
+}
+.form-signin {
+	max-width: 380px;
+	padding: 15px 35px 45px;
+	margin: 0 auto;
+	background-color: WhiteSmoke;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 5px;
+}
+.lbl {
+	font-weight: bold;
+}
+.lbl a {
+	font-weight: normal;
+	cursor: pointer;
+	float: right;
+}
+.form-signin-heading {
+	 margin-bottom: 30px;
+	 font-weight: normal;
+}
+ 
+.form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.mainBtn {
+	background-color: #0880f7;
+	color: white;
+}
+.newCustBtn {
+	 background-color: grey;
+	 color: white;
+}
+
+/*
  * FOOTER
  */
 footer {
